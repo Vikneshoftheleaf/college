@@ -1,0 +1,170 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Computer science.</title>
+    <link rel="stylesheet" href="cs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <script src="cs.js"></script>
+</head>
+
+<body>
+    <!--Top black banner-->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Department of Computer science.</h1>
+            <p>Government arts and science college, Kangeyam.</p>
+            <!--Backlink towards the college site-->
+            <a href="https://www.codechef.com/users/lonecage/edit">Home</a>
+        </div>
+    </section>
+
+
+    <!-- About us Region-->
+    <section id="about-us" class="main-x">
+
+        <div class="about-us">
+            <h1>About us</h1>
+        </div>
+
+        <div class="box">
+            <div class="container">
+                <h2>Staffs</h2><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+            </div>
+            <div class="container">
+                <h2>Students</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, in.</p>
+            </div>
+            <div class="container">
+                <h2>Events</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Staffs column-->
+    <section id="staffid" class="main-z">
+        <h2>
+            Staffs
+        </h2>
+        <div class="bars">
+            <div class="staff-name">
+                <h3>name1</h3><br>
+                <p>qualification</p>
+            </div>
+            <div class="staff-name">
+                <h3>name2</h3><br>
+                <p>qualification</p>
+            </div>
+            <div class="staff-name">
+                <h3>name3</h3><br>
+                <p>qualification</p>
+            </div>
+            <div class="staff-name">
+                <h3>name4</h3><br>
+                <p>qualification</p>
+            </div>
+    </section>
+
+    <!--Facilities Region-->
+    <section class="main-y">
+        <h1>Facilities</h1>
+        <div class="box">
+            <div class="container">
+                <h2>Lab</h2><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+            </div>
+            <div class="container">
+                <h2>Library</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, in.</p>
+            </div>
+            <div class="container">
+                <h2>Syllabus</h2><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, et.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--students column-->
+    <section class="main-xx">
+        <h2>Students</h2>
+        <div class="barx">
+            <div class="students-info">
+                <h2>null</h2><br>
+                <h5>Undergraduate students</h5>
+            </div>
+            <div class="students-info">
+                <h2>null</h2><br>
+                <h5>Postgraduate students</h5>
+            </div>
+            <div class="students-info">
+                <h2>null</h2><br>
+                <h5>PhD Research scholars</h5>
+            </div>
+        </div>
+    </section>
+
+    <!--calculator-->
+
+    <section id="calculator" class="calc">
+        <div class="calcbox">
+            <details>
+                <summary>
+                    % Calculator
+                </summary>
+                <div class="calcin">
+                    <details>
+                        <summary id="year-title">1st year</summary>
+                        <h4>1st semester</h4>
+                        <h4>C programming (core)</h4>
+                        <input id="a" type="text" size="5" value="0"> /100
+                        <h4>C Lab (core)</h4>
+                        <input id="b" type="text" size="5" value="0"> /100
+                        <h4>Digital (core)</h4>
+                        <input id="c" type="text" size="5" value="0"> /100
+                        <h4>Set & Functions (Allied)</h4>
+                        <input id="d" type="text" size="5" value="0"> /100
+                        <br>
+                        <textarea name="txt" id="calcoutputone" cols="5" rows="1" readonly></textarea>
+                        <button class="calcbtn" onclick="firstsemcalc()">Caluclute</button>
+                        <h4>2nd semester</h4>
+                        <h4>C++ programming (core)</h4>
+                        <input id="e" type="text" size="5" value="0"> /100
+                        <h4>C++ Lac (core)</h4>
+                        <input id="f" type="text" size="5" value="0"> /100
+                        <h4>Internet Basic Lab(core)</h4>
+                        <input id="g" type="text" size="5" value="0"> /50
+                        <h4>Discrete Mathematics (Allied)</h4>
+                        <input id="h" type="text" size="5" value="0"> /100
+                        <br>
+                        <textarea name="txt" id="calcoutputtwo" cols="5" rows="1" readonly></textarea>
+                        <button class="calcbtn" onclick="secondsemcalc()">Caluclute</button>
+                    </details>
+                </div>
+            </details>
+        </div>
+    </section>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="footer-entry">
+            <div class="footer-items">
+                <a href="">Home</a> |
+                <a href="#about-us">About us</a> |
+                <a href="#staffid">Staff</a> |
+                <a href="#calculator">% calculator</a>
+            </div>
+            <div class="copy-right">
+                <p>&copy; 2022. Government arts and science college, Kangeyam. All rights reservered.</p><br>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
