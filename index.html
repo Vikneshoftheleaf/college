@@ -5,278 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Department of Computer science.</title>
-    <link rel="stylesheet" href="cs.css">
+    <title>Government Arts snd Science college Kangeyam</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <script src="cs.js"></script>
+    <script src="js/cs.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!--Code starts here-->
+    <!--navbar-->
+    <section class="navbar">
+        <div class="nav-area">
+            <!--logo-->
+            <div class="nav-logo">
+                <a href=""><img src="" alt="logo"></a>
+            </div>
+            <!--college name-->
+            <div class="nav-name">
+                Government Arts snd Science college Kangeyam
+            </div>
+            <!--navigation links-->
+            <div id="togglemenu" class="nav-links">
+                <!--toggle-menu-close-->
+                <div class="toggleclose" onclick="toggleclose()">*</div>
+                <br>
 
-    <!--Top black banner-->
-    <section class="banner">
-
-        <div class="banner-text">
-            <h1>Department of Computer Science.</h1>
-            <p>Government Arts and Science College, Kangeyam.</p>
-            <!--Backlink towards the college site-->
-            <a href="https://www.gasckgm.org">Home</a>
-        </div>
-
-    </section>
-
-    <!--welcome title-->
-    <section>
-        <div class="welcome">
-
-            <h1>Welcome</h1>
-        </div>
-    </section>
-
-    <!--Description-->
-    <section class="description">
-        <div class="description-box">
-            <p><b>T</b>he Department of Computer Science was established during 2013-2014 with 3 staff members. At present there are more than 7 staff members. Our Department was started with 34 students on 2013, Now the cs department is valued more than
-                its prime value with Postgraduate students. We have 50 computers with 3 laser printers, 2 dot matrix printer, high-end photo copier machine and we have fastest internet connection. Our department library gives unlimited access to more
-                than 530 computer related books, which is very helpful for the student's research. The students of computer science are permitted to attend various programmes inside and outside the college and we also conduct sports week every year. Our
-                college is recognized and affiliated by Bharathiyar University, so we follow the syllabus is recommended by the Bharathiyar University.</p>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Staff & Principal</a></li>
+                    <li><a href="">Courses & Department</a></li>
+                    <li><a href="">Certificates</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <!--toggle-menu-open-->
+            <div class="toggleopen" onclick="toggleopen()">*</div>
         </div>
     </section>
 
-    <!--Staffs column-->
-    <section id="staffid" class="main-z">
-        <h2>
-            Staff
-        </h2>
-        <div class="bars">
-            <div class="staff-name">
-                <h3>Dr.K.Jayanthi</h3>
-                <h5>Asst.Professor & H.O.D</h5>
-                <p>M.sc, M.Phil, Ph.D</p>
-
-            </div>
-            <br>
-            <div class="staff-name">
-                <h3>Dr.N.Karthikeyani Visalakshi</h3>
-                <h5>Asst.Professor</h5>
-                <p>M.C.A, M.Phil, Ph.D</p>
-
-            </div>
-            <br>
-            <div class="staff-name">
-                <h3>Dr.T.Rajendran</h3>
-                <h5>Asst.Professor</h5>
-                <p>M.sc, M.E, M.Phil, Ph.D</p>
-
-            </div>
-            <br>
-            <div class="staff-name">
-                <h3>Dr.C.Sathya</h3>
-                <h5>Asst.Professor</h5>
-                <p>M.C.A, M.Phil, Ph.D</p>
-
-            </div>
-            <br>
-
-    </section>
-
-    <!-- About us Region-->
-    <section id="about-us" class="main-x">
-
-        <div class="about-us">
-            <h1>About us</h1>
-        </div>
-
-        <div class="box">
-            <div class="container">
-                <h2>Staffs</h2><br>
-                <p>The Department of Computer Science was established during 2013-2014 with 3 staff members. At present there are more than 7 staff members.</p>
-            </div>
-            <br>
-            <div class="container">
-                <h2>Students</h2><br>
-                <p>Our Department was started with 34 students on 2013, Now the cs department is valued more than its prime value with Postgraduate students.</p>
-            </div>
-            <br>
-            <div class="container">
-                <h2>Events</h2><br>
-                <p>The students of computer science are permitted to attend various programmes inside and outside the college and we conduct sports week every year.</p>
-            </div>
-            <br>
-        </div>
-    </section>
-
-    <!--students column-->
-    <section class="main-xx">
-        <h2>Students</h2>
-        <div class="barx">
-            <div class="students-info">
-                <h2>90+</h2><br>
-                <h5>Undergraduate students</h5> <br>
-            </div>
-            <div class="students-info">
-                <h2>20+</h2><br>
-                <h5>Postgraduate students</h5> <br>
-            </div>
-            <div class="students-info">
-                <h2>10+</h2><br>
-                <h5>PhD Research scholars</h5> <br>
-            </div>
-        </div>
-    </section>
-
-    <!--syllabus-->
-    <section id="syllabus" class="syllabus">
-        <h2>Syllabus</h2>
-        <div class="syllabus-container">
-            <div class="syllabus-entity">
-                <h5>UG syllabus</h5>
-                <a href="assets/27A2_22K.pdf" download="B.sc(cs)-syllabus.pdf">Download</a>
-            </div>
-            <div class="syllabus-entity">
-                <h5>PG syllabus</h5>
-                <a href="assets/msc_cs.pdf" download="M.sc(cs)-syllabus.pdf">Download</a>
-            </div>
-        </div>
-    </section>
-
-    <!--event calender-->
-    <section class="event-calender">
-        <div class="event-calender-title">
-            <h2>Events</h2>
-        </div>
-        <br>
-        <div class="event-calender-box">
-
-            <div class="event-entity">
-                <h4 style="float: right;">Date</h4>
-                <h3>event one</h3>
-                <p>information about the event one</p>
-            </div>
-            <br>
-            <div class="event-entity">
-                <h4 style="float: right;">Date</h4>
-                <h3>event two</h3>
-                <p>information about the event two</p>
-            </div>
-            <br>
-            <div class="event-entity">
-                <h4 style="float: right;">Date</h4>
-                <h3>event three</h3>
-                <p>information about the event three</p>
-            </div>
-            <br>
-            <div class="event-entity">
-                <h4 style="float: right;">Date</h4>
-                <h3>event four</h3>
-                <p>information about the event four</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!--Facilities Region-->
-    <section class="main-y">
-        <h1>Facilities</h1>
-        <div class="box">
-            <div class="container">
-                <h2>Lab</h2><br>
-                <p>We have 50 computers with 3 laser printers, 2 dot matrix printer, high-end photo copier machine and we have fastest internet connection.</p>
-            </div>
-            <br>
-            <div class="container">
-                <h2>Library</h2><br>
-                <p>Our department library gives unlimited access to more than 530 computer related books, which is very helpful for the student's research. </p>
-            </div>
-            <br>
-            <div class="container">
-                <h2>Syllabus</h2><br>
-                <p>Our college is recognized and affiliated by Bharathiyar University, so we follow the syllabus is recommended by the Bharathiyar University.</p>
-            </div>
-            <br>
-        </div>
-    </section>
-
-    <!--calculator-->
-    <section class="calculator">
-        <details>
-            <summary class="calc-summary-one">
-                % Calculator
-            </summary>
-            <div class="calculator-body">
-                <details>
-                    <summary class="calc-summary-two">1st year</summary>
-                    <div class="calculator-main">
-                        <div class="calculator-container">
-                            <hr>
-                            <h2>1st semester</h2>
-                            <hr>
-                            <h4>C programming (core)</h4>
-                            <input id="a" type="text" size="5" value="0" required> /100
-                            <h4>C Lab (core)</h4>
-                            <input id="b" type="text" size="5" value="0" required> /100
-                            <h4>Digital (core)</h4>
-                            <input id="c" type="text" size="5" value="0" required> /100
-                            <h4>Set & Functions (Allied)</h4>
-                            <input id="d" type="text" size="5" value="0" required> /100
-                            <br>
-                            <br>
-                            <textarea name="txt" id="calcoutputone" cols="5" rows="1" readonly></textarea>
-                            <button class="calcbtn" onclick="firstsemcalc()">Caluclute</button>
-                        </div>
-                        <div class="calculator-container">
-                            <hr>
-                            <h2>2nd semester</h2>
-                            <hr>
-                            <h4>C++ programming (core)</h4>
-                            <input id="e" type="text" size="5" value="0" required> /100
-                            <h4>C++ Lac (core)</h4>
-                            <input id="f" type="text" size="5" value="0" required> /100
-                            <h4>Internet Basic Lab(core)</h4>
-                            <input id="g" type="text" size="5" value="0" required> /50
-                            <h4>Discrete Mathematics (Allied)</h4>
-                            <input id="h" type="text" size="5" value="0" required> /100
-                            <br>
-                            <br>
-                            <textarea name="txt" id="calcoutputtwo" cols="5" rows="1" readonly></textarea>
-                            <button class="calcbtn" onclick="secondsemcalc()">Caluclute</button>
-                        </div>
-                    </div>
-                </details>
-            </div>
-        </details>
-
-    </section>
 
     <!--footer-->
     <section class="footer">
-        <div class="footer-entry">
-            <div class="quick-link">
-                <h5>Quick links</h5>
-            </div>
-            <div class="footer-items">
-                <a href="https://www.gasckgm.org">Home</a> |
-                <a href="#about-us">About us</a> |
-                <a href="#staffid">Staff</a> |
-                <a href="#syllabus">Syllabus</a>
-            </div>
-            <div class="contact-us">
-                <h5>Contact us</h5>
-                <p>The Principal,<br>Government Arts and Science College, <br>Mullipuram Post, Kangeyam, Thirupur-638108. <br> Phone No : 04257-241900<br>Email : principal.kangeyam@yahoo.in<br></p>
+        <div class="footer-area">
+            <div class="footer-area-quicklinks">
+                <!--quicklink heading-->
+                <div class="quicklink-heading">
+                    <h1>QuickLink</h1>
+                </div>
+                <!--links-->
+                <div class="footer-links">
+                    <a href=""><span>></span> Home</a>
+                    <a href=""><span>></span> About</a>
+                    <a href=""><span>></span> Staff & Principal</a>
+                    <a href=""><span>></span> Courses & Department</a>
+                    <a href=""><span>></span> Contact</a>
+                </div>
+                <br>
+                <div class="quicklink-heading">
+                    <h1>Address</h1>
+                </div>
+                <div class="footer-address">
+                    <p>The Principal,<br>Government Arts and Science College, <br>Mullipuram Post, Kangeyam, Thirupur-638108. <br> Phone No : 04257-241900<br>Email : principal.kangeyam@yahoo.in<br></p>
 
+                </div>
             </div>
-
-            <div class="copy-right">
-                <p>&copy; Copyright 2022. Government Arts and Science College, Kangeyam.</p><br>
-
+            <!--copyright-->
+            <div class="copyright">
+                <p>&copy; Copyright Government Arts snd Science college Kangeyam</p>
             </div>
         </div>
+
     </section>
-    <!--code ends here-->
 </body>
 
 </html>
