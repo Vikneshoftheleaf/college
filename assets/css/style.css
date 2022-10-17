@@ -15,6 +15,10 @@
 /**********************footer-starting***************************/
 
 .footer {
+    position: absolute;
+    width: 100%;
+    animation: slidein 2s linear;
+    animation-fill-mode: both;
     background-color: black;
     color: white;
 }
@@ -94,9 +98,17 @@
 }
 
 .nav-area {
-    display: grid;
-    grid-template-columns: 1fr 4fr 8fr 0fr;
-    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+    /*display: grid;
+    grid-template-columns: 1fr 4fr 8fr 0fr;*/
+}
+
+.nav-logo a img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .nav-links ul {
@@ -104,12 +116,13 @@
 }
 
 .nav-links {
+    width: 100%;
     text-align: center;
 }
 
 .nav-links ul li {
     display: inline-block;
-    padding-right: 2%;
+    padding: 1% 1%;
 }
 
 .nav-links ul li a {
@@ -174,6 +187,17 @@
     }
 }
 
+@keyframes slidein {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
 .dropdown {
     display: none;
     position: absolute;
@@ -196,7 +220,7 @@
 
 .description {
     padding: 2% 2%;
-    border: 1px solid black;
+    animation: slidein 1s linear;
 }
 
 .des-area {
@@ -251,6 +275,22 @@
 }
 
 
+/**banner*/
+
+.banner-area {}
+
+.banner-area img {
+    width: 100%;
+    height: auto;
+}
+
+
+/**/
+
+
+/**/
+
+
 /********************************************************/
 
 
@@ -270,7 +310,12 @@
     }
     /*navbar*/
     .nav-area {
-        grid-template-columns: 1fr 5fr 1fr 0fr;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-name {
+        display: none;
+        /*titile was removed*/
     }
     .nav-links {
         padding: 4% 4%;
@@ -290,20 +335,20 @@
     .toggleopen {
         display: flex;
         justify-content: center;
+        align-items: center;
+        width: 10%;
     }
     .toggleopen img {
         height: 50%;
-        /*togglemenu icon size*/
-        width: auto;
     }
     .toggleclose {
         display: flex;
         align-items: center;
-        height: 5%;
-        width: auto;
+        float: right;
+        width: 7%;
     }
     .toggleclose img {
-        height: 100%;
+        height: 50%;
         /*toggleclose icon size*/
         width: auto;
     }
@@ -326,9 +371,7 @@
         position: relative;
     }
     /*description*/
-    .description {
-        border: 1px solid black;
-    }
+    .description {}
     .des-area {
         display: block;
     }
@@ -358,5 +401,14 @@
     .welcome-heading p {
         font-size: 14px;
         word-spacing: 2px;
+    }
+    /*banner*/
+    .banner-area {
+        overflow: hidden;
+    }
+    .banner-area img {
+        height: 100vh;
+        width: auto;
+        transform: translateX(0x);
     }
 }
