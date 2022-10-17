@@ -1,0 +1,362 @@
+:root {
+    --dark: #FA8128;
+    --light: #FCAe1e;
+    --semilight: #F8D568;
+    --purple: #330072;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/**********************footer-starting***************************/
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.footer-area {
+    width: 90%;
+    margin: auto;
+    padding: 2% 2%;
+}
+
+.footer-area-quicklinks a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+.footer-address p {
+    line-height: 40px;
+}
+
+.quicklink-heading h1 {
+    display: inline-block;
+    line-height: 40px;
+}
+
+.quicklink-heading h1:after {
+    content: '.';
+    color: transparent;
+    background-color: var(--light);
+    height: 3px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+
+.copyright {
+    margin-top: 8%;
+    padding: 3% 3%;
+    text-align: center;
+}
+
+
+/*fonts size of footer*/
+
+.footer h1 {
+    font-size: 18px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer a {
+    font-size: 14px;
+}
+
+.footer-links span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/***********************footer-ending***********************/
+
+
+/*******************navigation-bar-starting************************/
+
+.navbar {
+    padding: 2% 2%;
+    background-color: var(--light);
+}
+
+.nav-area {
+    display: grid;
+    grid-template-columns: 1fr 4fr 8fr 0fr;
+    padding-top: 1%;
+}
+
+.nav-links ul {
+    /*links margin may be negative*/
+}
+
+.nav-links {
+    text-align: center;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding-right: 2%;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    height: 3px;
+    background-color: var(--purple);
+    width: 0%;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+.toggleopen {
+    height: auto;
+    width: auto;
+    display: none;
+    cursor: pointer;
+}
+
+.toggleclose {
+    height: auto;
+    width: auto;
+    display: none;
+    cursor: pointer;
+}
+
+
+/*font size for navigation*/
+
+.nav-name h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-name p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    justify-content: center;
+    font-weight: 500;
+}
+
+
+/*toggle animation*/
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    padding: 1% 1%;
+    line-height: 30px;
+    background-color: var(--light);
+    animation: fade 1s forwards;
+    text-align: left;
+}
+
+.nav-links ul li:hover .dropdown {
+    display: block;
+}
+
+
+/*********************nav-bar-ending*********************/
+
+
+/***********************description*********************/
+
+.description {
+    padding: 2% 2%;
+    border: 1px solid black;
+}
+
+.des-area {
+    display: flex;
+}
+
+.des-area img {
+    padding-top: 20%;
+    height: 200px;
+    width: auto;
+}
+
+.welcome-heading {
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.principal-img {
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.welcome-heading p {
+    text-align: justify;
+    margin-top: 2%;
+    font-size: 16px;
+    word-spacing: 5px;
+}
+
+.welcome-heading h1 {
+    display: inline-block;
+}
+
+.welcome-heading h1::after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    margin: auto;
+    background-color: var(--purple);
+    display: block;
+    transition: 0.5s;
+}
+
+.welcome-heading h1:hover::after {
+    width: 100%;
+}
+
+.welcome-heading .welcome-heading p {
+    margin-top: 2%;
+}
+
+
+/********************************************************/
+
+
+/***********All media queries statements here************/
+
+
+/********************************************************/
+
+@media (max-width:980px) {
+    /*footer*/
+    .footer-address p {
+        font-size: 11px;
+        line-height: 30px;
+    }
+    .copyright p {
+        font-size: 11px;
+    }
+    /*navbar*/
+    .nav-area {
+        grid-template-columns: 1fr 5fr 1fr 0fr;
+    }
+    .nav-links {
+        padding: 4% 4%;
+        display: block;
+        text-align: left;
+        background-color: var(--semilight);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 60%;
+        line-height: 50px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .toggleopen {
+        display: flex;
+        justify-content: center;
+    }
+    .toggleopen img {
+        height: 50%;
+        /*togglemenu icon size*/
+        width: auto;
+    }
+    .toggleclose {
+        display: flex;
+        align-items: center;
+        height: 5%;
+        width: auto;
+    }
+    .toggleclose img {
+        height: 100%;
+        /*toggleclose icon size*/
+        width: auto;
+    }
+    /*toggle entity*/
+    #togglemenu {
+        display: none;
+        animation: fade 0.5s ease-in;
+    }
+    /*font size for navigation*/
+    .nav-name h1 {
+        display: flex;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .nav-name p {
+        margin-top: -3%;
+        font-size: 12px;
+    }
+    .dropdown {
+        position: relative;
+    }
+    /*description*/
+    .description {
+        border: 1px solid black;
+    }
+    .des-area {
+        display: block;
+    }
+    .des-area img {
+        height: auto;
+        width: auto;
+        padding-top: 0%;
+    }
+    .principal-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2% 2%;
+    }
+    .principal-img p {
+        padding-top: 5%;
+        font-size: 12px;
+        text-align: center;
+    }
+    .principal-img {
+        display: flex;
+    }
+    .welcome-heading {
+        padding-top: 5%;
+        width: auto;
+    }
+    .welcome-heading p {
+        font-size: 14px;
+        word-spacing: 2px;
+    }
+}
