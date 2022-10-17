@@ -403,11 +403,14 @@
         word-spacing: 2px;
     }
     /*banner*/
+    .banner {
+        overflow: hidden;
+    }
     .banner-area {
         overflow: hidden;
     }
     .banner-area img {
-        height: 100vh;
+        height: 100%;
         width: auto;
         transform: translateX(0x);
     }
