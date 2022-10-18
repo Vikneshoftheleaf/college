@@ -104,11 +104,14 @@
     grid-template-columns: 1fr 4fr 8fr 0fr;*/
 }
 
+.nav-logo {
+    display: block;
+    width: 10%;
+}
+
 .nav-logo a img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
 .nav-links ul {
@@ -160,6 +163,10 @@
 
 
 /*font size for navigation*/
+
+.nav-name {
+    margin-left: 2%;
+}
 
 .nav-name h1 {
     display: flex;
@@ -277,18 +284,69 @@
 
 /**banner*/
 
-.banner-area {}
+.banner-area {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
 
-.banner-area img {
+.banner-img img {
     width: 100%;
     height: auto;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
-/**/
+/*************carousel-starting**************/
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.gallery h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.gallery h2::after {
+    content: '.';
+    color: transparent;
+    background-color: #330072;
+    height: 3px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 10px 0px;
+    background-color: #330072;
+}
+
+.carousel-indicators li {
+    background-color: white;
+}
+
+.caro {
+    background-color: var(--light);
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
 
 
-/**/
+/***************carousel-ending*/
 
 
 /********************************************************/
@@ -299,7 +357,7 @@
 
 /********************************************************/
 
-@media (max-width:980px) {
+@media (max-width:700px) {
     /*footer*/
     .footer-address p {
         font-size: 11px;
@@ -314,7 +372,6 @@
         justify-content: space-between;
     }
     .nav-name {
-        display: none;
         /*titile was removed*/
     }
     .nav-links {
@@ -360,12 +417,15 @@
     /*font size for navigation*/
     .nav-name h1 {
         display: flex;
-        font-size: 18px;
+        font-size: 80%;
         font-weight: 500;
     }
     .nav-name p {
-        margin-top: -3%;
-        font-size: 12px;
+        margin-top: -5%;
+        font-size: 50%;
+    }
+    .nav-logo {
+        width: 15%
     }
     .dropdown {
         position: relative;
