@@ -1,0 +1,80 @@
+    .staffareaone,
+    .staffareatwo,
+    .staffareathree {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .staffbox {
+        box-sizing: content-box;
+        margin: 2% 2% 2% 2%;
+        border-top-left-radius: 5%;
+        border-bottom-right-radius: 5%;
+        padding-top: 2%;
+        background-color: black
+    }
+    
+    .staffbox h1 {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: inline-block;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .staffbox ul li {
+        color: white;
+        font-size: 16px;
+    }
+    
+    .staffbox h1::after {
+        content: ".";
+        color: transparent;
+        height: 3px;
+        width: 0%;
+        display: block;
+        margin: auto;
+        background-color: var(--light);
+        transition: 0.5s;
+        margin-top: 5%;
+    }
+    
+    .staffbox h1:hover::after {
+        width: 100%;
+    }
+    
+    .staffbox img {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+    
+    .staffname {
+        padding-top: 10%;
+        padding-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    @media (max-width:700px) {
+        .staffareaone,
+        .staffareatwo,
+        .staffareathree {
+            flex-direction: column;
+        }
+        .staffbox h1::after {
+            width: 100%;
+        }
+        .staffbox ul li {
+            font-size: 14px;
+        }
+        .staffbox h1 {
+            font-size: 18px;
+        }
+    }
