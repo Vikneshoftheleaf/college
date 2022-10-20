@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.overlay {
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #330072;
+    opacity: 0.75;
+    position: absolute;
+    transition: 1s ease;
+    margin: auto;
+    display: block;
+}
+
+.dep1:hover .overlay {
+    height: 100%;
+}
+
+.dep2:hover .overlay {
+    height: 100%;
+}
+
+.depa1:hover .overlay {
+    height: 100%;
+}
+
+.depa2:hover .overlay {
+    height: 100%;
+}
+
+.depa3:hover .overlay {
+    height: 100%;
+}
+
+.depa4:hover .overlay {
+    height: 100%;
+}
+
+.depa5:hover .overlay {
+    height: 100%;
+}
+
+
+/*original code*/
+
+.dep1,
+.dep2,
+.depa1,
+.depa2,
+.depa3,
+.depa4,
+.depa5 {
+    position: relative;
+    height: clamp(10rem, 7rem, 16rem);
+    width: clamp(20rem, 15rem, 30rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 2rem 2rem 2rem 2rem;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.8);
+}
+
+.dep1::before,
+.dep2::before,
+.depa1::before,
+.depa2::before,
+.depa3::before,
+.depa4::before,
+.depa5::before {
+    content: "";
+    background-image: url('/cs/assets/images/cs.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 1;
+    border-radius: 0px;
+    display: flex;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.dep2::before {
+    background-image: url('/cs/assets/images/dep-maths.jpg');
+}
+
+
+/* Arts Depa*/
+
+.depa1:before {
+    background-image: url('/cs/assets/images/dep-economics.jpg');
+}
+
+.depa2::before {
+    background-image: url('/cs/assets/images/dep-bba.jpg');
+}
+
+.depa3::before {
+    background-image: url('/cs/assets/images/dep-tamil.jpg');
+}
+
+.depa4::before {
+    background-image: url('/cs/assets/images/english.jpeg');
+}
+
+.depa5::before {
+    background-image: url('/cs/assets/images/dep-commerce.jpg');
+}
+
+.science h1 {
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+}
+
+.head:after {
+    content: '.';
+    color: transparent;
+    background-color: #330072;
+    height: 3px;
+    width: 160px;
+    margin: auto;
+    display: block;
+}
+
+.head {
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 2rem 2rem 0 2rem;
+}
+
+.science {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Course Details */
+
+.fset {
+    border-radius: 10px;
+    border: 1px solid #330072;
+    background-color: #e6e6fa;
+    width: clamp(25rem, 40rem, 50rem);
+    display: flex;
+    justify-content: space-around;
+}
+
+.leg {
+    margin-left: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: #330072;
+    color: #FCAe1e;
+}
+
+.help-course {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 2rem;
+}
+
+.leg-dep {
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.leg-dep ul li,
+.leg-master-dep ul li {
+    list-style: url('/cs/assets/images/grad2.png');
+    line-height: 24px;
+}
+
+.leg-master-dep {
+    padding-bottom: 8px;
+}
+
+@media (max-width:980px) {
+    .fset {
+        flex-direction: column;
+        border: 1px solid black;
+    }
+    .leg-dep {
+        border: 1px solid black;
+        width: 80%;
+        margin: auto;
+    }
+    .leg-master-dep {
+        border: 1px solid black;
+        width: 80%;
+        margin: auto;
+    }
+}
