@@ -11,8 +11,9 @@
     .staffbox {
         box-sizing: content-box;
         margin: 2% 2% 2% 2%;
-        border-top-left-radius: 5%;
-        border-bottom-right-radius: 5%;
+        border-radius: 10px;
+        /*border-top-left-radius: 5%;
+        border-bottom-right-radius: 5%;*/
         padding-top: 2%;
         background-color: black
     }
@@ -54,12 +55,18 @@
     }
     
     .staffname {
-        padding-top: 10%;
-        padding-bottom: 5%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        padding: 2% 2% 2% 2%;
         line-height: 40px;
+    }
+    
+    .staffname ul li {
+        text-align: left;
+        list-style: none;
+        color: var(--light);
+    }
+    
+    .staffname ul li span {
+        color: white;
     }
     
     @media (max-width:700px) {
@@ -75,6 +82,12 @@
             font-size: 14px;
         }
         .staffbox h1 {
-            font-size: 18px;
+            font-size: 20px;
+        }
+        .staffbox {
+            padding-top: 5%;
+        }
+        .staffname {
+            padding: 4% 4%
         }
     }

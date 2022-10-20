@@ -49,3 +49,15 @@ function toggleclose() {
 function showdropdown() {
     document.getElementById("dropid").style.display = "block";
 }
+
+
+/*javascript commands for scroll reveal API*/
+ScrollReveal().reveal(".description", {
+    delay: 500
+});
+ScrollReveal().reveal("navbar", {
+    delay: 500
+});
+ScrollReveal().reveal('caro', {
+    delay: 500
+});
