@@ -1,5 +1,4 @@
 <?php
-if(isset($_POST['submit'])){
 $name =$_POST['name'];
 $email =$_POST['email'];
 $subject =$_POST['subject'];
@@ -7,11 +6,11 @@ $message =$_POST['message'];
 $to = "testwebpageno1@gmail.com";
 $txt= "Name:".$name."<br>"."email:".$email."<br>"."Subject:".$subject."<br>"."Message:".$message;
 $headers="from:".$email."\r\n"."CC: testwebpageno1@gmail.com";
-}
+
 if($email!=NULL){
     mail($to,"A New Message from College Website",$txt,$headers);
-    echo "/cs/pages/contact.php";
 }
+header("Location:ty.html");
 ?>
 
 <!DOCTYPE html>
@@ -84,7 +83,7 @@ if($email!=NULL){
     <!---------------------------conatact us starting---------------------------->
     <section class="contact-us">
         <div class="contactarea">
-            <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+            <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                 <div class="inputarea">
                     <label for="name">Name</label>
                     <br>
