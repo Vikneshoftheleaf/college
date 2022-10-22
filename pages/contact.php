@@ -1,3 +1,19 @@
+<?php
+if(isset($_POST['submit'])){
+$name =$_POST['name'];
+$email =$_POST['email'];
+$subject =$_POST['subject'];
+$message =$_POST['message'];
+$to = "testwebpageno1@gmail.com";
+$txt= "Name:".$name."<br>"."email:".$email."<br>"."Subject:".$subject."<br>"."Message:".$message;
+$headers="from:".$email."\r\n"."CC: testwebpageno1@gmail.com";
+}
+if($email!=NULL){
+    mail($to,"A New Message from College Website",$txt,$headers);
+    echo "/cs/pages/contact.php";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +31,7 @@
     <script src="/cs/assets/js/cs.js"></script>
     <!-----------------------stylesheet----------------->
     <link rel="stylesheet" href="/cs/assets/css/style.css">
-    <link rel="stylesheet" href="/cs/assets/css/bootstrap2.css">
+    <link rel="stylesheet" href="/cs/assets/css/contact.css">
     <!------------------bootstrap scripts------------>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -65,6 +81,41 @@
         </div>
     </section>
     <!-----------------------------navbar ending----------------------------------->
+    <!---------------------------conatact us starting---------------------------->
+    <section class="contact-us">
+        <div class="contactarea">
+            <form class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                <div class="inputarea">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name">
+                </div>
+                <div class="inputarea">
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="email" name="email">
+                </div>
+                <div class="inputarea">
+                    <label for="subject">subject</label>
+                    <br>
+                    <input type="text" name="subject">
+                </div>
+                <div class="inputarea">
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message" ></textarea>
+                </div>
+                <div class="txtarea">
+                    <button type="submit" name="submit">submit</button>
+                </div>
+            </form>
+            <div class="contactbox">
+
+            </div>
+        </div>
+    </section>
+    <!---------------------------conatact us ending---------------------------->
+
     <!-----------------------------footer-starting----------------------------------->
     <!--footer-->
     <section class="footer">
