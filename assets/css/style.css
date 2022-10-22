@@ -15,7 +15,8 @@
 /**********************footer-starting***************************/
 
 .footer {
-    position: absolute;
+    position: relative;
+    bottom: 0;
     width: 100%;
     animation: slidein 2s linear;
     animation-fill-mode: both;
@@ -388,6 +389,7 @@
         height: 100%;
         width: 60%;
         line-height: 50px;
+        z-index: 10;
     }
     .nav-links ul li {
         display: block;

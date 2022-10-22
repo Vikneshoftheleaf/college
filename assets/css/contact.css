@@ -1,12 +1,12 @@
 .contact-us {
-    border: 1px solid black;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .contactarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
     padding: 2% 2%;
     color: var(--light);
 }
@@ -38,13 +38,14 @@ label {
 }
 
 .inputarea textarea {
-    padding: 2% 2%;
+    padding: 3% 3%;
     resize: none;
     height: 8rem;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     border-radius: 1rem;
+    background-color: rgba(51, 0, 114, 0.2);
 }
 
 .contactarea form {
@@ -57,10 +58,11 @@ label {
 }
 
 .inputarea input {
-    padding: 2% 2%;
+    padding: 3% 3%;
     width: auto;
     border: 1px solid black;
     border-radius: 1rem;
+    background-color: rgba(51, 0, 114, 0.2);
 }
 
 .txtarea {

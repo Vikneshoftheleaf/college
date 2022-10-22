@@ -1,93 +1,98 @@
+.staff {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.staffareaone,
+.staffareatwo,
+.staffareathree {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.staffbox {
+    box-sizing: content-box;
+    margin: 2% 2% 2% 2%;
+    border-radius: 10px;
+    /*border-top-left-radius: 5%;
+        border-bottom-right-radius: 5%;*/
+    padding-top: 2%;
+    background-color: black
+}
+
+.staffbox h1 {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+}
+
+.staffbox ul li {
+    color: white;
+    font-size: 16px;
+}
+
+.staffbox h1::after {
+    content: ".";
+    color: transparent;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    background-color: var(--light);
+    transition: 0.5s;
+    margin-top: 5%;
+}
+
+.staffbox img {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+.staffname {
+    padding: 2% 2% 2% 2%;
+    line-height: 40px;
+}
+
+.staffname ul li {
+    text-align: left;
+    list-style: none;
+    color: var(--light);
+}
+
+.staffname ul li span {
+    color: white;
+}
+
+@media (max-width:700px) {
+    .staff {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
     .staffareaone,
     .staffareatwo,
     .staffareathree {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        width: 80%;
-        margin: auto;
+        flex-direction: column;
     }
-    
-    .staffbox {
-        box-sizing: content-box;
-        margin: 2% 2% 2% 2%;
-        border-radius: 10px;
-        /*border-top-left-radius: 5%;
-        border-bottom-right-radius: 5%;*/
-        padding-top: 2%;
-        background-color: black
+    .staffbox h1::after {
+        width: 100%;
     }
-    
+    .staffbox ul li {
+        font-size: 14px;
+    }
     .staffbox h1 {
-        padding-top: 2%;
-        padding-bottom: 2%;
-        display: inline-block;
-        color: white;
         font-size: 20px;
     }
-    
-    .staffbox ul li {
-        color: white;
-        font-size: 16px;
+    .staffbox {
+        padding-top: 5%;
     }
-    
-    .staffbox h1::after {
-        content: ".";
-        color: transparent;
-        height: 3px;
-        width: 0%;
-        display: block;
-        margin: auto;
-        background-color: var(--light);
-        transition: 0.5s;
-        margin-top: 5%;
-    }
-    
-    .staffbox h1:hover::after {
-        width: 100%;
-    }
-    
-    .staffbox img {
-        display: flex;
-        justify-content: center;
-        height: auto;
-        width: 100%;
-    }
-    
     .staffname {
-        padding: 2% 2% 2% 2%;
-        line-height: 40px;
+        padding: 4% 4%
     }
-    
-    .staffname ul li {
-        text-align: left;
-        list-style: none;
-        color: var(--light);
-    }
-    
-    .staffname ul li span {
-        color: white;
-    }
-    
-    @media (max-width:700px) {
-        .staffareaone,
-        .staffareatwo,
-        .staffareathree {
-            flex-direction: column;
-        }
-        .staffbox h1::after {
-            width: 100%;
-        }
-        .staffbox ul li {
-            font-size: 14px;
-        }
-        .staffbox h1 {
-            font-size: 20px;
-        }
-        .staffbox {
-            padding-top: 5%;
-        }
-        .staffname {
-            padding: 4% 4%
-        }
-    }
+}
