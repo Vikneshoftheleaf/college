@@ -1,0 +1,49 @@
+.contact-us {
+    border: 1px solid black;
+}
+
+.contactarea {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 2% 2%;
+}
+
+.inputarea {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.inputarea textarea {
+    padding: 2% 2%;
+    resize: none;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactarea form {
+    border: 1px solid black;
+    padding: 2% 2%;
+}
+
+.inputarea input {
+    padding: 2% 2%;
+    width: auto;
+}
+
+.txtarea {
+    display: flex;
+    justify-content: center;
+}
+
+.txtarea button {
+    padding: 5% 5%;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-top: 1.5rem;
+}
