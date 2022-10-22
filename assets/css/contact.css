@@ -4,18 +4,37 @@
 
 .contactarea {
     display: flex;
-    justify-content: center;
-    width: 90%;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid black;
     padding: 2% 2%;
+    color: var(--light);
+}
+
+.contact-us h1 {
+    color: black;
+    display: inline-block;
+}
+
+.contact-us h1:after {
+    content: ".";
+    color: transparent;
+    height: 3px;
+    width: 100%;
+    background-color: var(--purple);
+    display: block;
+    margin: auto;
+}
+
+label {
+    font-weight: 600;
 }
 
 .inputarea {
     display: flex;
     flex-direction: column;
-    line-height: 0.5rem;
-    margin-top: 1.5rem;
+    line-height: 0.8rem;
+    margin-top: 3rem;
 }
 
 .inputarea textarea {
@@ -24,26 +43,53 @@
     height: 8rem;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1rem;
 }
 
 .contactarea form {
     border: 1px solid black;
-    padding: 2% 2%;
+    padding: 5% 5%;
+    background-color: white;
+    border-radius: 2rem;
+    width: 30rem;
+    color: black;
 }
 
 .inputarea input {
     padding: 2% 2%;
     width: auto;
+    border: 1px solid black;
+    border-radius: 1rem;
 }
 
 .txtarea {
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .txtarea button {
-    padding: 5% 5%;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    background-color: var(--purple);
+    width: 100%;
+    padding: 2% 2%;
     border-radius: 10px;
     border-width: 1px;
     margin-top: 1.5rem;
+}
+
+@media (max-width:980px) {
+    .contactarea form {
+        width: 15rem;
+        border-radius: 1rem;
+    }
+    .inputarea {
+        margin-top: 2rem;
+    }
+    .txtarea {
+        margin-top: 0.5rem;
+    }
 }
