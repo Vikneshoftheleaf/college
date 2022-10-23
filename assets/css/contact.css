@@ -45,7 +45,7 @@ label {
     flex-direction: column;
     border: 1px solid black;
     border-radius: 1rem;
-    background-color: rgba(51, 0, 114, 0.2);
+    background-color: #e6e6fa;
 }
 
 .contactarea form {
@@ -62,7 +62,7 @@ label {
     width: auto;
     border: 1px solid black;
     border-radius: 1rem;
-    background-color: rgba(51, 0, 114, 0.2);
+    background-color: #e6e6fa;
 }
 
 .txtarea {
@@ -85,7 +85,7 @@ label {
 
 @media (max-width:980px) {
     .contactarea form {
-        width: 15rem;
+        width: 18rem;
         border-radius: 1rem;
     }
     .inputarea {
