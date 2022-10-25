@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo img {
+            padding: 0.5rem;
+            height: 5rem;
+            aspect-ratio: 1;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+        }
+        
+        .nav-links ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-decoration: none;
+        }
+        
+        .nav-links ul li {
+            padding: 1rem;
+            list-style: none;
+            text-transform: capitalize;
+        }
+        
+        .nav-links ul li a {
+            text-decoration: none;
+        }
+        
+        .clg-title a {
+            text-decoration: none;
+        }
+        
+        .clg-title a h1 {
+            margin-left: 0.1rem;
+        }
+        
+        .clg-title a p {
+            margin-top: -0.6rem;
+            font-size: 0.8rem;
+        }
+        
+        #btn button {
+            height: 2rem;
+            aspect-ratio: 1;
+            background-color: transparent;
+            background-image: url("/cs/assets/icons/bars.svg");
+            background-repeat: no-repeat;
+        }
+        
+        @media (max-width:900px) {
+            .nav-links {
+                display: none;
+            }
+            .clg-title {
+                width: 60%;
+            }
+            .clg-title a h1 {
+                font-size: 1rem;
+                margin-left: 0;
+            }
+            .clg-title a p {
+                font-size: 0.6rem;
+            }
+            .logo img {
+                height: 3rem;
+            }
+            #btn {
+                position: absolute;
+                top: 1.6rem;
+                right: 1rem;
+                z-index: 1000;
+            }
+            .nav-links {
+                display: flex;
+                position: absolute;
+                top: 0rem;
+                right: 0rem;
+                flex-direction: column;
+                background-color: aqua;
+            }
+            .nav-links ul {
+                display: block;
+                margin-top: 5rem;
+                height: 100vh;
+            }
+        }
+    </style>
+    <script>
+        function toggle() {
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="index.html"><img src="/cs/assets/images/logo.png" alt=""></a>
+        </div>
+        <div class="clg-title">
+            <a href="">
+                <h1>Government Arts and Science College Kangeyam.</h1>
+                <p> <i>Affiliated to Bharrthiyar University</i> </p>
+            </a>
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">Staff & Principal</a></li>
+                <li><a href="">Courses & Departments</a></li>
+                <li><a href="">Activity</a></li>
+                <li><a href="">Contact Us</a></li>
+
+            </ul>
+        </div>
+        <div id="btn">
+            <button id="icon" onclick="toggle()"></button>
+        </div>
+    </nav>
+
+
+</body>
+
+</html>
