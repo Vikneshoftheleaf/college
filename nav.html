@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .logo img {
+            padding: 0.5rem;
+            height: 5rem;
+            aspect-ratio: 1;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            background-color: #FCAe1e;
+        }
+        
+        .nav-links {
+            margin-left: 4rem;
+        }
+        
+        .nav-links ul {
+            text-decoration: none;
+        }
+        
+        .nav-links ul li {
+            display: inline-block;
+            list-style: none;
+            text-transform: capitalize;
+            padding-right: 1rem;
+        }
+        
+        .nav-links ul li::after {
+            content: "";
+            height: 0.1rem;
+            width: 0%;
+            background-color: #330072;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .clg-title a {
+            text-decoration: none;
+        }
+        
+        .clg-title a h1 {
+            color: black;
+            margin-left: 0.1rem;
+        }
+        
+        .clg-title a p {
+            color: black;
+            margin-top: -0.0001rem;
+            font-size: 0.8rem;
+        }
+        
+        #iconbar,
+        #iconx {
+            display: none;
+            border: 0;
+            background-color: transparent;
+        }
+        
+        #iconbar img {
+            height: 1rem;
+            aspect-ratio: 1;
+            background-color: transparent;
+        }
+        
+        #iconx img {
+            height: 1rem;
+            aspect-ratio: 1;
+            background-color: transparent;
+        }
+        
+        .dropdown {
+            display: none;
+            position: absolute;
+            padding: 1% 1%;
+            line-height: 2rem;
+            background-color: #FCAe1e;
+            animation: toggle 1s forwards;
+            text-align: left;
+            width: 11rem;
+        }
+        
+        .nav-links ul li:hover .dropdown {
+            display: block;
+        }
+        
+        @media (max-width:980px) {
+            .clg-title {
+                width: 60%;
+            }
+            .clg-title a h1 {
+                font-size: 1rem;
+                margin-left: 0;
+            }
+            .clg-title a p {
+                font-size: 0.6rem;
+            }
+            .logo img {
+                height: 3rem;
+            }
+            .nav-links {
+                padding-top: 1rem;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                display: none;
+                position: absolute;
+                top: 0rem;
+                right: 0rem;
+                flex-direction: column;
+                background-color: #F8D568;
+                z-index: 1000;
+                animation: toggle 1s ease;
+                line-height: 2rem;
+            }
+            .nav-links ul {
+                display: block;
+                margin-top: 2rem;
+                height: 100vh;
+            }
+            .nav-links ul li {
+                display: block;
+            }
+            #iconbar {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+            #iconx {
+                display: block;
+                float: right;
+            }
+            .dropdown {
+                position: relative;
+                height: 7rem;
+            }
+        }
+        
+        @keyframes toggle {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+        function toggleopen() {
+            var trigger = document.getElementById("trigger");
+            trigger.style.display = "block";
+        }
+
+        function toggleclose() {
+            var trigger = document.getElementById("trigger");
+            trigger.style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <a href="index.html"><img src="/cs/assets/images/logo.png" alt=""></a>
+        </div>
+        <div class="clg-title">
+            <a href="">
+                <h1>Government Arts and Science College Kangeyam.</h1>
+                <p> <i>Affiliated to Bharrthiyar University</i> </p>
+            </a>
+        </div>
+        <div id="trigger" class="nav-links">
+            <button id="iconx" onclick="toggleclose()"><img src="/cs/assets/icons/xmark.svg" alt="" srcset=""></button>
+            <ul>
+
+                <li><a href="">home</a></li>
+                <li><a href="">Staff & Principal</a></li>
+                <li><a href="" onclick="return false">Courses & Departments</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/cs/assets/objects/nirf22 college.pdf" download="NIRF - College Report 2022">NIRF - College Report</a></li>
+
+                            <li><a href="/cs/assets/objects/nirf 22 overall.pdf" download="NIRF - Overall Report 2022">NIRF - Overall Report</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Activity</a></li>
+                <li><a href="">Contact Us</a></li>
+
+            </ul>
+        </div>
+
+        <button id="iconbar" onclick="toggleopen()"><img src="/cs/assets/icons/bars.svg" alt="" srcset=""></button>
+
+
+    </nav>
+
+
+</body>
+
+</html>
+
+/*******************navigation-bar-starting************************/ .navbar { padding: 2% 2%; background-color: var(--light); } .nav-area { display: flex; flex-direction: row; /*display: grid; grid-template-columns: 1fr 4fr 8fr 0fr;*/ } .nav-logo { display:
+block; width: 10%; } .nav-logo a img { height: 100%; width: 100%; } .nav-links ul { /*links margin may be negative*/ } .nav-links { width: 100%; text-align: center; } .nav-links ul li { display: inline-block; padding: 1% 1%; } .nav-links ul li a { text-decoration:
+none; color: black; } .nav-links ul li a::after { content: ''; height: 3px; background-color: var(--purple); width: 0%; margin: auto; display: block; transition: 0.5s; } .nav-links ul li a:hover::after { width: 100%; } .toggleopen { height: auto; width:
+auto; display: none; cursor: pointer; } .toggleclose { height: auto; width: auto; display: none; cursor: pointer; } /*font size for navigation*/ .nav-name { margin-left: 2%; } .nav-name h1 { display: flex; flex-direction: column; font-size: 20px; font-weight:
+600; padding-top: 2%; } .nav-name p { font-size: 12px; letter-spacing: 1px; justify-content: center; font-weight: 500; } /*toggle animation*/ @keyframes fade { 0% { opacity: 0%; } 100% { opacity: 100%; } } @keyframes slidein { from { opacity: 0; transform:
+translateY(50px); } to { opacity: 1; transform: translate(0px); } } .dropdown { display: none; position: absolute; padding: 1% 1%; line-height: 30px; background-color: var(--light); animation: fade 1s forwards; text-align: left; } .nav-links ul li:hover
+.dropdown { display: block; } /*********************nav-bar-ending*********************/ ----------------------------- /*navbar*/ .nav-area { display: flex; justify-content: space-between; } .nav-name { /*titile was removed*/ } .nav-links { padding: 4%
+4%; display: block; text-align: left; background-color: var(--semilight); position: absolute; top: 0; right: 0; height: 100%; width: 60%; line-height: 50px; z-index: 10; } .nav-links ul li { display: block; } .toggleopen { display: flex; justify-content:
+center; align-items: center; width: 10%; } .toggleopen img { height: 50%; } .toggleclose { display: flex; align-items: center; float: right; width: 7%; } .toggleclose img { height: 50%; /*toggleclose icon size*/ width: auto; } /*toggle entity*/ #togglemenu
+{ display: none; animation: fade 0.5s ease-in; } /*font size for navigation*/ .nav-name { line-height: 20px; } .nav-name h1 { display: flex; font-size: 1rem; font-weight: 500; } .nav-name p { margin-top: -5%; font-size: 0.6rem; } .nav-logo { display:
+none; width: 15% } .dropdown { position: relative; }
