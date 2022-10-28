@@ -36,20 +36,29 @@ function secondsemcalc() {
 
 }
 
-function toggleopen() {
+/*function toggleopen() {
     var menu = document.getElementById("togglemenu")
     menu.style.display = "block";
 }
 
-function toggleclose() {
+/*function toggleclose() {
     var menu = document.getElementById("togglemenu")
     menu.style.display = "none";
-}
+}*/
 
 function showdropdown() {
     document.getElementById("dropid").style.display = "block";
 }
 
+function toggleopen() {
+    var trigger = document.getElementById("trigger");
+    trigger.style.display = "block";
+}
+
+function toggleclose() {
+    var trigger = document.getElementById("trigger");
+    trigger.style.display = "none";
+}
 
 /*javascript commands for scroll reveal API*/
 ScrollReveal().reveal(".description", {
