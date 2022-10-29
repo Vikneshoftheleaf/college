@@ -22,45 +22,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-------------------Scroll reveal API----------------------->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-------------------------jquery------------------->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-----------------------------navbar starting----------------------------------->
     <section>
-        <nav class="nav">
-            <div class="logo">
-                <a href="index.html"><img src="/cs/assets/images/logo.png" alt=""></a>
-            </div>
-            <div class="clg-title">
-                <a href="">
-                    <h1>Government Arts and Science College Kangeyam.</h1>
-                    <p> <i>Affiliated to Bharrthiyar University</i> </p>
-                </a>
-            </div>
-            <div id="trigger" class="nav-links">
-                <button id="iconx" onclick="toggleclose()"><img src="/cs/assets/icons/xmark.svg" alt=""></button>
-                <ul>
-
-                    <li><a href="">home</a></li>
-                    <li><a href="">Staff & Principal</a></li>
-                    <li><a href="" onclick="return false">Courses & Departments</a>
-                        <div class="dropdown">
-                            <ul>
-                                <li><a href="/cs/assets/objects/nirf22 college.pdf" download="NIRF - College Report 2022">NIRF - College Report</a></li>
-                                <li><a href="/cs/assets/objects/nirf 22 overall.pdf" download="NIRF - Overall Report 2022">NIRF - Overall Report</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="">Activity</a></li>
-                    <li><a href="">Contact Us</a></li>
-
-                </ul>
-            </div>
-
-            <button id="iconbar" onclick="toggleopen()"><img src="/cs/assets/icons/bars.svg" alt="" srcset=""></button>
-
-
-        </nav>
+        <!-------navbar placeholer--------->
+        <div id="nave"></div>
+        <!-------navbar placeholer--------->
+        <!--navbar loading script-->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#nave').load('/cs/pages/nav.html');
+            })
+        </script>
+        <!--navbar loading script-->
     </section>
     <!-----------------------------navbar ending----------------------------------->
     <section class="workspace" onclick="toggleclose()">
@@ -147,36 +125,17 @@
         <!----------->
 
         <!-----------------------------footer-starting----------------------------------->
-        <!--footer-->
         <section class="footer">
-            <div class="footer-area">
-                <div class="footer-area-quicklinks">
-                    <!--quicklink heading-->
-                    <div class="quicklink-heading">
-                        <h1>QuickLink</h1>
-                    </div>
-                    <!--links-->
-                    <div class="footer-links">
-                        <a href="index.html"><span>></span> Home</a>
-                        <a href="/cs/pages/principal-staff.html"><span>></span> Staff & Principal</a>
-                        <a href="/cs/pages/courses-departments.html"><span>></span> Courses & Department</a>
-                        <a href="/cs/pages/activity.html"><span>></span> Activity</a>
-                        <a href="/cs/pages/contact.html"><span>></span> Contact</a>
-                    </div>
-                    <br>
-                    <div class="quicklink-heading">
-                        <h1>Address</h1>
-                    </div>
-                    <div class="footer-address">
-                        <p>The Principal,<br>Government Arts and Science College, <br>Mullipuram Post, Kangeyam, Thirupur-638108. <br> Phone No : 04257-241900<br>Email : principal.kangeyam@yahoo.in<br></p>
-
-                    </div>
-                </div>
-                <!--copyright-->
-                <div class="copyright">
-                    <p>&copy; Copyright Government Arts snd Science college Kangeyam</p>
-                </div>
-            </div>
+            <!-------footer placeholer--------->
+            <div id="footert"></div>
+            <!-------fotter placeholer--------->
+            <!--navbar loading script-->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#footert').load('/cs/pages/footer.html');
+                })
+            </script>
+            <!--navbar loading script-->
 
         </section>
         <!-----------------------------footer-ending----------------------------------->
