@@ -104,7 +104,8 @@ nav {
 }
 
 .nav-links {
-    margin-left: 4rem;
+    display: block;
+    margin-left: 3rem;
 }
 
 .nav-links ul {
@@ -139,6 +140,10 @@ nav {
 
 .clg-title a {
     text-decoration: none;
+}
+
+.clg-title {
+    width: 30%;
 }
 
 .clg-title a h1 {
@@ -177,9 +182,12 @@ nav {
     padding: 1rem;
     background-color: #FCAe1e;
     animation: toggle 1s forwards;
-    width: 11rem;
     z-index: 900;
     line-height: 3rem;
+}
+
+.dropdown ul li {
+    display: block;
 }
 
 .nav-links ul li:hover .dropdown {
@@ -204,9 +212,8 @@ nav {
         height: 3rem;
     }
     .nav-links {
-        padding-top: 1rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding: 1rem;
+        height: 100vh;
         display: none;
         position: absolute;
         top: 0rem;
@@ -218,13 +225,11 @@ nav {
         line-height: 2rem;
     }
     .nav-links ul {
-        display: block;
         margin-top: 4rem;
-        height: 100vh;
-        line-height: 3rem;
     }
     .nav-links ul li {
         display: block;
+        line-height: 4rem;
     }
     #iconbar {
         display: block;
@@ -238,10 +243,13 @@ nav {
     }
     .dropdown {
         position: relative;
-        padding: 0rem;
-        height: 7rem;
-        margin-top: -4rem;
-        padding-left: 0.5rem;
+        padding: 1rem;
+    }
+    .dropdown ul {
+        margin-top: -1rem;
+    }
+    .nav-links ul li:hover .dropdown {
+        display: block;
     }
     @media (max-width:280px) {
         nav {

@@ -57,7 +57,10 @@ function toggleopen() {
 
 function toggleclose() {
     var trigger = document.getElementById("trigger");
-    trigger.style.display = "none";
+    if (window.innerWidth < 900) {
+        trigger.style.display = "none";
+    }
+
 }
 
 /*javascript commands for scroll reveal API*/
