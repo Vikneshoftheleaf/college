@@ -22,181 +22,140 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-------------------Scroll reveal API----------------------->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-------------------------jquery------------------->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-----------------------------navbar starting----------------------------------->
-    <section class="navbar">
-        <div class="nav-area">
-            <!--logo-->
-            <div class="nav-logo">
-                <a href=""><img src="/cs/assets/images/logo.png" alt="logo"></a>
-            </div>
-            <!--college name-->
-            <div class="nav-name">
-                <h1>Government Arts snd Science college Kangeyam</h1><br>
-                <p><i>Affiliated to Bharathiyar University</i></p>
-            </div>
-            <!--navigation links-->
-            <div id="togglemenu" class="nav-links">
-                <!--toggle-menu-close-->
-                <div class="toggleclose" onclick="toggleclose()"><img src="/cs/assets/icons/xmark.svg" alt="close"></div>
-                <br>
-
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="/cs/pages/principal-staff.html">Staff & Principal</a></li>
-                    <li><a href="/cs/pages/courses-departments.html">Courses & Department</a></li>
-                    <li><a href="" onclick="return false">Certificates</a>
-                        <div class="dropdown">
-                            <ul>
-                                <li><a href="/cs/assets/objects/nirf22 college.pdf" download="NIRF - College Report 2022">NIRF - College Report</a></li>
-                                <li><a href="/cs/assets/objects/nirf 22 overall.pdf" download="NIRF - Overall Report 2022">NIRF - Overall Report</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="/cs/pages/activity.html">Activity</a></li>
-
-                    <li><a href="/cs/pages/contact.html">Contact us</a></li>
-                </ul>
-            </div>
-            <!--toggle-menu-open-->
-            <div class="toggleopen" onclick="toggleopen()"><img src="/cs/assets/icons/bars.svg" alt="menu"></div>
-        </div>
+    <section>
+        <!-------navbar placeholer--------->
+        <div id="nave"></div>
+        <!-------navbar placeholer--------->
+        <!--navbar loading script-->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#nave').load('/cs/pages/nav.html');
+            })
+        </script>
+        <!--navbar loading script-->
     </section>
     <!-----------------------------navbar ending----------------------------------->
+    <section onclick="toggleclose()">
 
-    <!-----------------------------staff and department------------------------>
-    <section class="staff reveal">
-        <div class="staffareaone">
-            <div class="staffbox ">
-                <h1>Department of English</h1>
-                <img src="/cs/assets/images/eng staff.jpg" alt="eng">
+        <!-----------------------------staff and department------------------------>
+        <section class="staff reveal">
+            <div class="staffareaone">
+                <div class="staffbox ">
+                    <h1>Department of English</h1>
+                    <img src="/cs/assets/images/eng staff.jpg" alt="eng">
 
-                <div class="staffname">
-                    <ul>
-                        <li>R.Sivasamy,<span> M.A - Asst. Professor and H.O.D</span></li>
-                        <li>Dr.B.Devaki,<span> M.A, M.phil, Ph.D - Asst. Professor</span></li>
-                        <li>V.Prakash,<span> M.A, M.phil - Asst. Professor</span></li>
+                    <div class="staffname">
+                        <ul>
+                            <li>R.Sivasamy,<span> M.A - Asst. Professor and H.O.D</span></li>
+                            <li>Dr.B.Devaki,<span> M.A, M.phil, Ph.D - Asst. Professor</span></li>
+                            <li>V.Prakash,<span> M.A, M.phil - Asst. Professor</span></li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="staffbox">
-                <h1>Department of Commerce</h1>
-                <img src="/cs/assets/images/bcom-staff.jpg" alt="bcom">
+                <div class="staffbox">
+                    <h1>Department of Commerce</h1>
+                    <img src="/cs/assets/images/bcom-staff.jpg" alt="bcom">
 
-                <div class="staffname">
-                    <ul>
+                    <div class="staffname">
+                        <ul>
 
-                        <li>Dr.G.Kavitha,<span> M.com, MBA, M.phil, Ph.D - Asst. Professor and H.O.D</span></li>
-                        <li>Dr.M.Venkata Krishnan,<span> M.com, MBA, M.phil, Ph.D - Asst. Professor </span></li>
-                        <li>Dr.M.Vidya,,<span> M.com, M.phil, MBA, PGDCA, Ph.D - Asst. Professor </span></li>
-                        <li>Dr.C.Leeladevi<span> M.com, M.phil, Ph.D - Asst. Professor </span></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <div class="staffareatwo">
-            <div class="staffbox">
-                <h1>Department of Mathematics</h1>
-                <img src="/cs/assets/images/maths-staff.jpg" alt="maths">
-
-                <div class="staffname">
-                    <ul>
-                        <li>V.Sennivasan,<span> M.Sc, M.Phil, PGDCA, PGDTM - Asst. Professor and H.O.D</span></li>
-                        <li>Dr.P.Senthilkumar,<span> M.Sc, M.Phil, PGDCA, B.Ed,Ph.D  - Asst. Professor</span></li>
-                        <li>P.Gurusamy,<span> M.Sc, M.Phil, B.Ed - Asst. Professor</span></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="staffbox">
-                <h1>Department of Computer Science</h1>
-                <img src="/cs/assets/images/cs-staff.jpg" alt="cs">
-
-                <div class="staffname">
-                    <ul>
-                        <li>Dr.K.Jayanthi,<span> M.Sc, M.Phil, ph.D - Asst. Professor and H.O.D</span></li>
-                        <li>Dr.N.Karthikeyani,<span> MCA, M.Phil, Ph.D - Asst. Professor</span></li>
-                        <li>Dr.T.Rajendran,<span> M.Sc, M.Phil, M.E, Ph.D - Asst. Professor</span></li>
-                        <li>Dr.C.Sathya,<span> MCA, M.Phil, Ph.D - Asst. Professor</span></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-        <div class="staffareathree">
-            <div class="staffbox">
-                <h1>Department of Buisness administration</h1>
-                <img src="/cs/assets/images/bba-staff.jpg" alt="bba">
-
-                <div class="staffname">
-                    <ul>
-                        <li>Dr.A.Nallasivam,<span> MBA, M.Phil, Ph.D - Asst. Professor and H.O.D</span></li>
-                        <li>Dr.P.Komarasamy,<span> MBA, M.Phil, Ph.D, PGDCA, PGDPM & LL - Asst. Professor</span></li>
-
-                    </ul>
-                </div>
-            </div>
-
-            <div class="staffbox">
-                <h1>Department of Tamil</h1>
-                <img src="/cs/assets/images/tamil-staff.jpg" alt="tamil">
-
-                <div class="staffname">
-                    <ul>
-                        <li>Dr.S.Devaraju,<span> M.A, M.Phil, Ph.D - Asst. Professor and H.O.D</span></li>
-                        <li>Dr.R.Chandrasekaran,<span> M.A, M.Phil, Ph.D - Asst. Professor</span></li>
-                        <li>Dr.C.Kumarasami,<span> M.A, M.Phil, Ph.D, B.Ed - Asst. Professor</span></li>
-                        <li>Dr.V.Paneer Selvam,<span> M.A, M.Phil, Ph.D - Asst. Professor</span></li>
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        </div>
-    </section>
-    <!-----------------------------staff and department------------------------>
-
-    <!-----------------------------footer-starting----------------------------------->
-    <!--footer-->
-    <section class="footer">
-        <div class="footer-area">
-            <div class="footer-area-quicklinks">
-                <!--quicklink heading-->
-                <div class="quicklink-heading">
-                    <h1>QuickLink</h1>
-                </div>
-                <!--links-->
-                <div class="footer-links">
-                    <a href="index.html"><span>></span> Home</a>
-                    <a href="/cs/pages/principal-staff.html"><span>></span> Staff & Principal</a>
-                    <a href="/cs/pages/courses-departments.html"><span>></span> Courses & Department</a>
-                    <a href="/cs/pages/activity.html"><span>></span> Activity</a>
-                    <a href="/cs/pages/contact.html"><span>></span> Contact</a>
-                </div>
-                <br>
-                <div class="quicklink-heading">
-                    <h1>Address</h1>
-                </div>
-                <div class="footer-address">
-                    <p>The Principal,<br>Government Arts and Science College, <br>Mullipuram Post, Kangeyam, Thirupur-638108. <br> Phone No : 04257-241900<br>Email : principal.kangeyam@yahoo.in<br></p>
+                            <li>Dr.G.Kavitha,<span> M.com, MBA, M.phil, Ph.D - Asst. Professor and H.O.D</span></li>
+                            <li>Dr.M.Venkata Krishnan,<span> M.com, MBA, M.phil, Ph.D - Asst. Professor </span></li>
+                            <li>Dr.M.Vidya,,<span> M.com, M.phil, MBA, PGDCA, Ph.D - Asst. Professor </span></li>
+                            <li>Dr.C.Leeladevi<span> M.com, M.phil, Ph.D - Asst. Professor </span></li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
-            <!--copyright-->
-            <div class="copyright">
-                <p>&copy; Copyright Government Arts snd Science college Kangeyam</p>
+            <div class="staffareatwo">
+                <div class="staffbox">
+                    <h1>Department of Mathematics</h1>
+                    <img src="/cs/assets/images/maths-staff.jpg" alt="maths">
+
+                    <div class="staffname">
+                        <ul>
+                            <li>V.Sennivasan,<span> M.Sc, M.Phil, PGDCA, PGDTM - Asst. Professor and H.O.D</span></li>
+                            <li>Dr.P.Senthilkumar,<span> M.Sc, M.Phil, PGDCA, B.Ed,Ph.D  - Asst. Professor</span></li>
+                            <li>P.Gurusamy,<span> M.Sc, M.Phil, B.Ed - Asst. Professor</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="staffbox">
+                    <h1>Department of Computer Science</h1>
+                    <img src="/cs/assets/images/cs-staff.jpg" alt="cs">
+
+                    <div class="staffname">
+                        <ul>
+                            <li>Dr.K.Jayanthi,<span> M.Sc, M.Phil, ph.D - Asst. Professor and H.O.D</span></li>
+                            <li>Dr.N.Karthikeyani,<span> MCA, M.Phil, Ph.D - Asst. Professor</span></li>
+                            <li>Dr.T.Rajendran,<span> M.Sc, M.Phil, M.E, Ph.D - Asst. Professor</span></li>
+                            <li>Dr.C.Sathya,<span> MCA, M.Phil, Ph.D - Asst. Professor</span></li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-        </div>
+            <div class="staffareathree">
+                <div class="staffbox">
+                    <h1>Department of Buisness administration</h1>
+                    <img src="/cs/assets/images/bba-staff.jpg" alt="bba">
+
+                    <div class="staffname">
+                        <ul>
+                            <li>Dr.A.Nallasivam,<span> MBA, M.Phil, Ph.D - Asst. Professor and H.O.D</span></li>
+                            <li>Dr.P.Komarasamy,<span> MBA, M.Phil, Ph.D, PGDCA, PGDPM & LL - Asst. Professor</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="staffbox">
+                    <h1>Department of Tamil</h1>
+                    <img src="/cs/assets/images/tamil-staff.jpg" alt="tamil">
+
+                    <div class="staffname">
+                        <ul>
+                            <li>Dr.S.Devaraju,<span> M.A, M.Phil, Ph.D - Asst. Professor and H.O.D</span></li>
+                            <li>Dr.R.Chandrasekaran,<span> M.A, M.Phil, Ph.D - Asst. Professor</span></li>
+                            <li>Dr.C.Kumarasami,<span> M.A, M.Phil, Ph.D, B.Ed - Asst. Professor</span></li>
+                            <li>Dr.V.Paneer Selvam,<span> M.A, M.Phil, Ph.D - Asst. Professor</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <!-----------------------------staff and department------------------------>
+
+        <!-----------------------------footer-starting----------------------------------->
+        <!--footer-->
+        <section class="footer">
+            <!-------footer placeholer--------->
+            <div id="footert"></div>
+            <!-------fotter placeholer--------->
+            <!--navbar loading script-->
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('#footert').load('/cs/pages/footer.html');
+                })
+            </script>
+            <!--navbar loading script-->
+
+        </section>
+        <!-----------------------------footer-ending----------------------------------->
 
     </section>
-    <!-----------------------------footer-ending----------------------------------->
-
-
 </body>
 
 </html>
